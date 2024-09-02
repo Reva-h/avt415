@@ -3,9 +3,9 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Basic sans-serif for body text */
-    background-color: #000823; /* Dark charcoal background */
-    color: #f8f8f2; /* Soft off-white text */
+    font-family: 'Pixelify Sans', sans-serif; /* Basic sans-serif for body text */
+    background-color: #000823;
+    color: #ffb6b9;
     margin: 0;
     padding: 0;
     text-shadow: none; /* Removes any shadow for a clean look */
@@ -16,9 +16,6 @@ div {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    /* background-color: #000823; Slightly lighter dark background */
-    /* border: 4px solid #060058; Dark gray border */
-    border-radius: 0; /* Sharp edges for pixel look */
     text-align: left;
 }
 
@@ -29,32 +26,54 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ffb6b9; /* Pastel teal */
+    font-size: 5.0em;
+    margin-bottom: 0px;
+    color: #ffb6b9;
     /* border-bottom: 4px solid #4e4e4e; */
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 30px;
     margin-bottom: 10px;
     border-bottom: 2px solid #ffb6b9;
     padding-bottom: 5px;
-    color: #ffb6b9; /* Pastel pink */
+    color: #ffb6b9;
 }
 
 h3 {
     font-size: 1.5em;
     margin-left: 20px;
-    color: #ffb6b9; /* Pastel yellow */
+    color: #ffb6b9;
     border-left: 4px solid #ffb6b9;
     padding-left: 10px;
 }
+p {
+    padding-left: 14px;
+}
+li {
+    list-style-type: square;
+    font-size: 1em;
+    padding-inline-start: 1sch;
+    margin-left: 24px;
+}
 
+/* Default link styling */
+a {
+    color: #ffb6b9; /* Replace with your desired color */
+    text-decoration: underline; /* Removes the underline */
+    /* font-weight: bold; Makes the link bold */
+}
+
+/* Hover state styling */
+a:hover {
+    color: #ffb6b9; /* Change color when hovering */
+    text-decoration: underline overline; /* Optionally, underline on hover */
+}
+/* Pixel border CSS-------------------------------------------------------------------------------------- */
 .pixel-corners,
-.pixel-corners--wrapper {
+.pixel-corners--wrapper { /* CREDIT: https://pixelcorners.lukeb.co.uk/ */
   clip-path: polygon(0px calc(100% - 20px),
     4px calc(100% - 20px),
     4px calc(100% - 12px),
