@@ -83,7 +83,7 @@ a:hover {
 .no-style-link:active {
     color: inherit; /* Keep the color consistent on hover, visited, and active states */
     text-decoration: none; /* Keep underline removed */
-
+}
 /* Pixel border CSS (CREDIT: https://pixelcorners.lukeb.co.uk/)-------------------------------------------------------------------------------------- */
 .pixel-corners,
 .pixel-corners--wrapper {
