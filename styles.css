@@ -68,12 +68,25 @@ a {
 
 /* Hover state styling */
 a:hover {
-    color: #ffb6b9; /* Change color when hovering */
-    text-decoration: underline overline; /* Optionally, underline on hover */
+  color: #ffb6b9; /* Change color when hovering */
+  text-decoration: underline overline; /* Optionally, underline on hover */
 }
-/* Pixel border CSS-------------------------------------------------------------------------------------- */
+
+/* Override link styling (for hyperlinking divs like h1) */
+.no-style-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from the h1 element */
+}
+
+.no-style-link:hover,
+.no-style-link:visited,
+.no-style-link:active {
+    color: inherit; /* Keep the color consistent on hover, visited, and active states */
+    text-decoration: none; /* Keep underline removed */
+
+/* Pixel border CSS (CREDIT: https://pixelcorners.lukeb.co.uk/)-------------------------------------------------------------------------------------- */
 .pixel-corners,
-.pixel-corners--wrapper { /* CREDIT: https://pixelcorners.lukeb.co.uk/ */
+.pixel-corners--wrapper {
   clip-path: polygon(0px calc(100% - 20px),
     4px calc(100% - 20px),
     4px calc(100% - 12px),
