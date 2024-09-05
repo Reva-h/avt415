@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     text-shadow: none; /* Removes any shadow for a clean look */
+    cursor: url('assets/cursor.png'), auto; /* Custom 8-bit cursor with default cursor as fallback (credit: https://icons8.com/icon/set/cursor/family-experimental"
 }
 
 /* Container Styling */
@@ -70,6 +71,8 @@ a {
 a:hover {
   color: #ffb6b9; /* Change color when hovering */
   text-decoration: underline overline; /* Optionally, underline on hover */
+  cursor: url('assets/pointer.png'), auto;
+
 }
 
 /* Override link styling (for hyperlinking divs like h1) */
