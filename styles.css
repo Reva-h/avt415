@@ -1,5 +1,6 @@
 /* Import the Pixelify Sans Font */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 /* Body Styling */
 body {
@@ -9,8 +10,10 @@ body {
     margin: 0;
     padding: 0;
     text-shadow: none; /* Removes any shadow for a clean look */
-    cursor: url('assets/cursor.png'), auto; /* Custom 8-bit cursor with default cursor as fallback (credit: https://icons8.com/icon/set/cursor/family-experimental"
-}
+    cursor: url('assets/cursor.png'), auto; /* Custom 8-bit cursor with default cursor as fallback (credit: https://icons8.com/icon/set/cursor/family-experimental" */
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.5em;
+    }
 
 /* Container Styling */
 div {
@@ -27,7 +30,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 5.0em;
+    font-size: 3.0em;
     margin-bottom: 0px;
     color: #ffb6b9;
     /* border-bottom: 4px solid #4e4e4e; */
@@ -35,7 +38,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.0em;
     margin-top: 30px;
     margin-bottom: 10px;
     border-bottom: 2px solid #ffb6b9;
