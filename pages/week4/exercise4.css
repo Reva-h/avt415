@@ -1,0 +1,9 @@
+body {
+    background-color : goldenrod
+}
+@media screen and (min-width: 768px){
+    /* styles for screen sized 768 px and above */
+    body {
+        background-color : tomato
+    }
+}
