@@ -1,97 +1,59 @@
-
-/* The same styles as before */
-body {
-    background-color: #000823;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Press Start 2P', sans-serif;
-    color: #fff;
-  }
-  
-@media screen and (min-width: 768px){
-    /* styles for screen sized 768 px and above */
-    body {
-        background-color : #ffb6b9
-    }
-}
-  .card {
-    background-color: #000823;
-    padding: 20px;
-    width: 500px;
-    text-align: center;
-    box-shadow: 8px 8px 0px #ffb6b9;
-  }
-  
-  /* .title {
-    font-size: 24px;
-    color: #e67e22;
-  } */
-  
-  /* .message {
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  .cake {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .layer {
-    width: 200px;
-    height: 10px;
-    margin: 4px auto;
-  }
-  
-  .layer_pink {
-    background-color: #ffb6b9;
-  }
-  
-  .layer_dark {
-    background-color: #000823;
-  }
-  
-  .candle {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 30px;
-    background-color: #ffb6b9;
-  }
-  
-  .flame {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: #000823;
-    border-color: #ffb6b9;
-    /* border-radius: 50%; */
-  } */
-  
-/* 
-  @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&display=swap');
+/* NOTE: CAKE GRAPHIC FROM https://codepen.io/JensJ/pen/MzZrbw */
 html,
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ee9ca7;
+  color:#141d39;
+  transition: background 1.2s ease;
+  min-height: 658px; /* cheap fix to candle alignment issue, i know */
 }
 
-body {
-  background: #ee9ca7;
-} */
+/* invert colors on resize */
+@media screen and (max-width: 768px){
+    /* styles for screen sized 768 px and above */
+    html,
+    body {
+        transition: background 1.2s ease;
+        width: 100%;
+        height: 100%;
+        background-color: #141d39;
+        color: #ffb6b9;
+        min-height: 100vh; 
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column; /* Use 'row' for horizontal centering */
+        align-items: center;    /* Centers horizontally */
+        justify-content: center; /* Centers vertically */
+        min-height: 658px;
+    } 
+    h1 {
+        font-size: clamp(0.5rem, 5vw, 1rem);
+    }
+}
+#canvas {
+    background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    pointer-events: auto;
+}
+
 
 #cake {
   display: block;
   position: relative;
   margin: -10em auto 0 auto;
+}
+
+* {
+    pointer-events: none;
 }
 
 /* ============================================== Candle
@@ -178,13 +140,17 @@ body {
   }
 }
 
-/* .text {
-  color: #8b6a60;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style:italic;
+.text {
+  /* color: #141d39; */
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  /* font-style:italic; */
   text-align: center;
+  font-size: 2em;
   h1 {
-    font-size: 1.4em;
+    font-size: 4.0em;
+    font-weight: 800;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
   }
-}   */
+}  
