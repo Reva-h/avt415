@@ -20,6 +20,7 @@ function updateMessage() {
   // Run the function whenever the window is resized
   window.onresize = updateMessage;
 
+// Below confetti code generated with ChatGPT -----------------------------------------------------------
 // Setup the canvas
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');

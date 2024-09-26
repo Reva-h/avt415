@@ -13,8 +13,9 @@ body {
     cursor: url('assets/cursor.png'), auto; /* Custom 8-bit cursor with default cursor as fallback (credit: https://icons8.com/icon/set/cursor/family-experimental" */
     font-family: "Jersey 15", sans-serif;
     font-size: 1.5em;
+    line-height: 1.5;
     }
-/* demo commit */
+    
 /* Container Styling */
 div {
     max-width: 800px;
