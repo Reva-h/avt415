@@ -17,7 +17,10 @@ hr {
 }
 
 /* image styles */
-
+.column img {
+  width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+}
 
 /* type styles */
 h1, h2, h3, h4, h5, h6 {
@@ -63,8 +66,9 @@ p {
 }
 /* link styles */
 a, a:link, a:visited, a:active {
-  color: black;
-  text-decoration: none;
+  color: tomato;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 a:hover {
   color: tomato;
@@ -91,8 +95,12 @@ button a:hover {
 
 /* media queries */
 @media screen and (max-width: 800px) {
+  body{
+    background-color: #333333;
+    color: #dddddd;
+  }
   h1 {
-    font-size: 4.653rem;
+    font-size: 3.653rem;
   }
   h2 {
     font-size: 2.998rem;
@@ -115,4 +123,20 @@ button a:hover {
   .large-text {
     font-size: 1.5rem;
   }
+  .dauphine-page {
+    background-color: dodgerblue;
+  }
+}
+@media screen and (min-width: 800px) {
+   h1, h2, h3, h4, h5, h6{
+    color: #ff6347
+  }
+}
+/* page-specific styles */
+.about-page {
+  background-color: #ffd700;
+}
+
+.custom-span {
+  font-style: italic;
 }
